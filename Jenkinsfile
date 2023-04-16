@@ -15,7 +15,7 @@ node {
                         sh "git config user.email shedgeanup249@gmail.com"
                         sh "git config user.name anup70970"
                         //sh "git switch main"
-                        sh "cat deployment.yaml"
+                        sh "cat deployment.yml"
                         sh "sed -i 's+anups70/cicd_gitops_k8s.*+anups70/cicd_gitops_k8s:${DOCKERTAG}+g' deployment.yml"
                         sh "cat deployment.yml"
                         sh "git add ."
